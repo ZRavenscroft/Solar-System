@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#galaxy {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #sun{
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: yellow;
+    border: none;
+  }
+  .mercury{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    background-color: darkorange;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: translate(80px);
+    animation: mer 1s linear infinite;
+  }
+  .venus{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    background-color: darkkhaki;
+    left: 53%;
+    transform: translateY(-100%);
+    transform: translate(120px);
+    animation: ven 1s linear infinite;
+  }
+  .earth{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    background-color: green;
+    left: 63%;
+    transform: translateY(1000%);
+    transform: translate(200px);
+    animation: ear 1s linear infinite;
+  }
+  @keyframes mer {
+    from{
+        transform: rotate(0deg) translate(90px);  
+    }
+    to{
+        transform: rotate(360deg) translate(90px);
+    }
+  }
+  @keyframes ven {
+    from{
+        transform: rotate(0deg) translate(220px);  
+    }
+    to{
+        transform: rotate(360deg) translate(200px);
+    }
+  }
+  @keyframes ear {
+    from{
+        transform: rotate(0deg) translate(320px);  
+    }
+    to{
+        transform: rotate(360deg) translate(500px);
+    }
+  }
+  /* #sun, .planet {
+    top: 50%;
+    left: 50%;
+    margin-top: -0.5em;
+    margin-left: -0.5em;
+    border-radius: 50%;
+  }
+  
+  #sun {
+    background-color: #FB7209;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+  }
+  
+  .planet {
+    background-color: #202020;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    width: 1em;
+    height: 1em;
+    position: absolute;
+  }
+  .orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+  }
+  #mercury.orbit {
+    width: 12em;
+    height: 12em;
+    margin-top: -6em;
+    margin-left: -6em;
+  }
+  #mercury .planet {
+    left: 0%;
+    top: 50%;
+  }
+  .orbit {
+    animation-name: orbit;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+  }
+  @keyframes orbit {
+    0%   { transform: rotateZ(0deg); }
+    100% { transform: rotateZ(-360deg); }
+  } */
